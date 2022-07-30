@@ -40,6 +40,8 @@ hello_SOURCES = src/hello.c src/system.h
 
 hello_LDADD = $(LIBINTL) $(top_builddir)/lib/lib$(PACKAGE).a
 
+dist_bin_SCRIPTS = src/testing.sh
+
 localedir = $(datadir)/locale
 DEFS = -DLOCALEDIR=\"$(localedir)\" @DEFS@
 
